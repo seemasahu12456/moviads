@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Background</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .clickable-bg {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            background: url("app.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .clickable-bg a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clickable-bg">
+        <a href="https://www.example.com" target="_blank"></a>
+    </div>
+</body>
+
+</html>
